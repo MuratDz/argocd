@@ -23,4 +23,4 @@ spec:
           recurse: true
       destination:
         server: https://kubernetes.default.svc
-        namespace: '{{path[2]}}'
+        namespace: '{{path[1]}}'
