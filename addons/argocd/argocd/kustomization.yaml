@@ -7,6 +7,5 @@ resources:
 - addons-appset.yaml
 - addons-proj.yaml
 
-
 patches:
   - path: argocd-cm.yaml
