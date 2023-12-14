@@ -12,7 +12,7 @@ spec:
           - path: addons/*
   template:
     metadata:
-      name: '{{path[2]}}'
+      name: '{{path}}'
     spec:
       project: addons
       source:
