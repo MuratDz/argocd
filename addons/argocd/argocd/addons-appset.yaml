@@ -12,13 +12,13 @@ spec:
           - path: addons/*
   template:
     metadata:
-      name: '{{path[2]}}'
+      name: '{{path.basename}}'
     spec:
       project: addons
       source:
         repoURL: https://github.com/MuratDz/argocd.git
         targetRevision: HEAD
-        path: '{{path}}'
+        path: '{{path.path}}'
         directory:
           recurse: false
       destination:
