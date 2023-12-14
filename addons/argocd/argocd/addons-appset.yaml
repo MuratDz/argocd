@@ -9,10 +9,10 @@ spec:
         repoURL: https://github.com/elsabahnur/argocd.git
         revision: HEAD
         directories:
-          - path: addons/*           
+          - path: addons/*
   template:
     metadata:
-      name: '{{.path.basename}}'  
+      name: '{{path.basename}}'
     spec:
       project: addons
       source:
@@ -23,9 +23,4 @@ spec:
           recurse: true
       destination:
         server: https://kubernetes.default.svc
-        namespace: '{{path[1]}}' 
-#      syncPolicy:
-#        automated: {}
-#        syncOptions:
-#          - CreateNamespace=true
-#          - ServerSideApply=true  ## Not working on k8s 1.18, apply after upgrade >1.21
+        namespace: '{{path[1]}}'
