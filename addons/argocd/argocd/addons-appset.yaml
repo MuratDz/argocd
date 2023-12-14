@@ -6,7 +6,7 @@ metadata:
 spec:
   generators:
     - git:
-        repoURL: https://github.com/elsabahnur/argocd.git
+        repoURL: https://github.com/MuratDz/argocd.git
         revision: HEAD
         directories:
           - path: addons/*
@@ -16,7 +16,7 @@ spec:
     spec:
       project: addons
       source:
-        repoURL: https://github.com/elsabahnur/argocd.git
+        repoURL: https://github.com/MuratDz/argocd.git
         targetRevision: HEAD
         path: '{{path}}'
         directory:
